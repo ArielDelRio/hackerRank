@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "create:challenge": "ts-node ./scripts/create-challenge.ts -- "
   },
   "keywords": [],
   "author": "",

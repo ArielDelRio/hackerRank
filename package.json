@@ -1,21 +1,34 @@
 {
-  "name": "hackerRank",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest",
-    "create:challenge": "ts-node ./scripts/create-challenge.ts -- "
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/jest": "^28.1.3",
-    "@types/node": "^18.0.0",
-    "jest": "^28.1.1",
-    "ts-jest": "^28.0.5",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {}
+	"name": "hackerRank",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest",
+		"create:challenge": "ts-node ./scripts/create-challenge.ts -- ",
+		"lint:check": "eslint --ext js,jsx,ts,tsx --color --quiet",
+		"lint:check:ci": "npm run lint:check -- \"**/*.{js,ts}\"",
+		"lint:write": "eslint --fix \"**/*.{js,ts}\"",
+		"format:check": "prettier --check",
+		"format:check:ci": "npm run format:check -- \"**/*.{js,ts,json,md}\"",
+		"format:write": "prettier --write \"**/*.{js,ts,json,md}\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@types/jest": "^28.1.3",
+		"@types/node": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.42.0",
+		"eslint": "^8.27.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-config-standard-with-typescript": "^23.0.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-n": "^15.5.0",
+		"eslint-plugin-promise": "^6.1.1",
+		"jest": "^28.1.1",
+		"prettier": "2.7.1",
+		"ts-jest": "^28.0.5",
+		"typescript": "^4.8.4"
+	}
 }
